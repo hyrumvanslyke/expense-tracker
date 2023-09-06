@@ -1,7 +1,7 @@
 
 import Expenses from "./components/Expenses/Expenses";
 
-function App() {
+const  App = () =>{// can use arrow fuctions in react.
   const expenses = [
     {
       id: "e1",
