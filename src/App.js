@@ -23,9 +23,14 @@ const  App = () =>{// can use arrow fuctions in react.
       date: new Date(2021, 5, 12),
     },
   ];
+
+  const addExpenseHandler = expense =>{
+    console.log('In app')
+    console.log(expenses)
+  }
   return (
     <div>
-      <NewExpense></NewExpense>
+      <NewExpense onAddExpense={addExpenseHandler}/>
       <Expenses items={expenses}/>
     </div>
   );
